@@ -1,0 +1,51 @@
+<header class="about-me js-lazyload-bg" id="contact-me" style="background-image: url('assets/code.jpg')">
+	<div class="about-content">
+
+		<p class="speech unspoken">Hello, I&rsquo;m</p>
+		<h1>Eric Butler</h1>
+		<h2>{{ tagline }}</h2>
+
+		<p class="intro">
+			Check out my
+			<a href="#work">work samples</a>,
+			<a href="#current-job">job history</a>,
+			<br>
+			<a href="#education">education</a> and
+			<a href="#skills">technical skills</a> below.
+		</p>
+
+		<ul class="contact-info cf">
+			<li>
+				<a [href]="'mailto:' + contacts.email + '?subject=I%20saw%20your%20website'" target="_blank" rel="noopener">
+					<img src="assets/icons/envelope.svg" alt="Email" width="30">
+					{{ contacts.email }}
+				</a>
+			</li>
+			<li>
+				<a [href]="contacts.location" target="_blank" rel="noopener">
+					<img src="assets/icons/compass.svg" alt="Location" width="30">
+					Louisville Ky<br> USA
+				</a>
+			</li>
+			<li>
+				<a [href]="contacts.github" target="_blank" rel="noopener">
+					<img src="assets/icons/github.svg" alt="Github" width="26">
+					GitHub<br> Profile
+				</a>
+			</li>
+			<li>
+				<a [href]="contacts.codepen" target="_blank" rel="noopener">
+					<img src="assets/icons/codepen.svg" alt="CodePen" width="26">
+					CodePen<br> Pens
+				</a>
+			</li>
+		</ul>
+
+		<p class="scroll-down">
+			<a href="#work" title="See some work">
+				<img src="assets/icons/chevron-down.svg" alt="Scroll down" width="30">
+			</a>
+		</p>
+
+	</div>
+</header>

@@ -1,0 +1,22 @@
+<section id="work" class="work cf">
+
+	<p class="headnote">Work Samples</p>
+
+	<div class="sites cf">
+
+		<div *ngFor="let site of sites" class="site" [ngClass]="!site.is_active ? 'inactive' : ''">
+
+			<a *ngIf="site.link" [href]="site.link" target="_blank" rel="noopener">
+				<img [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'">
+			</a>
+			<img *ngIf="!site.link" [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'">
+
+			<h4>{{ site.title }}</h4>
+
+			<p>{{ site.year }} - {{ site.tech_stack?.join(', ') }}</p>
+
+		</div>
+
+	</div>
+
+</section>

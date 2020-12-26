@@ -1,0 +1,25 @@
+<div class="headnote-container">
+	<p class="headnote">Formerly</p>
+</div>
+
+<section class="jobs cf">
+
+	<div *ngFor="let job of jobs" class="job cf">
+		<div class="job-details cf">
+			<h3 class="job-title">{{ job.position }}</h3>
+			<h4 class="job-employer">{{ job.company_name }}</h4>
+			<div class="job-summary">
+				<ul>
+					<li *ngFor="let item of job.description">{{ item }}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="job-specs cf">
+			<img class="job-icon" [src]="job.company_logo" [alt]="job.company_name">
+			<p class="job-dates">{{ job.start_date}} &ndash; {{ job.end_date }}</p>
+			<p class="job-location">{{ job.location }}</p>
+			<p class="job-industry">{{ job.industry?.join(', ') }}</p>
+		</div>
+	</div>
+
+</section>

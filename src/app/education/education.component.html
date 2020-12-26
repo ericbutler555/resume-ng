@@ -1,0 +1,21 @@
+<section id="education" class="education">
+	<div class="education-skin1" aria-hidden="true">&nbsp;</div>
+	<div class="education-skin2" aria-hidden="true">&nbsp;</div>
+
+	<h2>Education</h2>
+
+	<div class="schools cf">
+
+		<div *ngFor="let school of schools" class="school cf">
+			<img [src]="school.icon" [alt]="school.name" class="school-icon">
+			<h3 class="school-name">{{ school.name }}</h3>
+			<h4 *ngIf="school.program" class="school-program">{{ school.program }}</h4>
+			<div class="school-stats">
+				<p class="school-credit">{{ school.certificate }}</p>
+				<p class="school-location">{{ school.location }}</p>
+				<p class="school-dates">{{ school.start_date }} &ndash; {{ school.end_date }}</p>
+			</div>
+		</div>
+
+	</div>
+</section>
