@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { AppService } from '../app.service';
 import { School } from './school';
 
 @Component({
@@ -8,15 +9,11 @@ import { School } from './school';
 	styleUrls: ['./education.component.scss']
 })
 export class EducationComponent implements OnInit {
-	schools: School[] = [];
+	schools: Observable<School[]>;
 
-	constructor(private http: HttpClient) { }
+	constructor(private appService: AppService) { }
 
 	ngOnInit(): void {
-		this.http.get<School[]>('data/education.json').subscribe(data => {
-			this.schools = data;
-		}, error => {
-			console.log(error);
-		});
+		this.schools = this.appService.getSchools();
 	}
 }

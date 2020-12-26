@@ -4,7 +4,7 @@
 
 <section class="jobs cf">
 
-	<div *ngFor="let job of jobs" class="job cf">
+	<div *ngFor="let job of jobs | async" class="job cf">
 		<div class="job-details cf">
 			<h3 class="job-title">{{ job.position }}</h3>
 			<h4 class="job-employer">{{ job.company_name }}</h4>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { AppService } from '../app.service';
 import { Job } from './job';
 
 @Component({
@@ -8,15 +9,11 @@ import { Job } from './job';
 	styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
-	jobs: Job[] = [];
+	jobs: Observable<Job[]>;
 
-	constructor(private http: HttpClient) { }
+	constructor(private appService: AppService) { }
 
 	ngOnInit(): void {
-		this.http.get<Job[]>('data/experience.json').subscribe(data => {
-			this.jobs = data.filter(j => !j.is_current);
-		}, error => {
-			console.log(error);
-		});
+		this.jobs = this.appService.getPastJobs();
 	}
 }

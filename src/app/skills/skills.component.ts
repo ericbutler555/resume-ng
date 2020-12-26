@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { AppService } from '../app.service';
 
 @Component({
 	selector: 'app-skills',
@@ -7,15 +8,11 @@ import { HttpClient } from '@angular/common/http';
 	styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
-	skills: string[] = [];
+	skills: Observable<string[]>;
 
-	constructor(private http: HttpClient) { }
+	constructor(private appService: AppService) { }
 
 	ngOnInit(): void {
-		this.http.get<string[]>('data/skills.js').subscribe(data => {
-			this.skills = data;
-		}, error => {
-			console.log(error);
-		});
+		this.skills = this.appService.getSkills();
 	}
 }

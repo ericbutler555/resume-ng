@@ -4,7 +4,9 @@
 
 	<div class="sites cf">
 
-		<div *ngFor="let site of sites" class="site" [ngClass]="!site.is_active ? 'inactive' : ''">
+		<div *ngFor="let site of sites | async"
+			class="site"
+			[ngClass]="!site.is_active ? 'inactive' : ''">
 
 			<a *ngIf="site.link" [href]="site.link" target="_blank" rel="noopener">
 				<img [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'">

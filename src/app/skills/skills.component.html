@@ -3,7 +3,7 @@
 	<h2>Skills &amp; Technologies</h2>
 
 	<ul class="skills-items">
-		<li *ngFor="let skill of skills">{{ skill }}</li>
+		<li *ngFor="let skill of skills | async">{{ skill }}</li>
 	</ul>
 
 </section>

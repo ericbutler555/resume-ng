@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { AppService } from '../app.service';
 import { Site } from './site';
 
 @Component({
@@ -8,15 +9,11 @@ import { Site } from './site';
 	styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-	sites: Site[] = [];
+	sites: Observable<Site[]>;
 
-	constructor(private http: HttpClient) { }
+	constructor(private appService: AppService) { }
 
 	ngOnInit(): void {
-		this.http.get<Site[]>('data/sites.json').subscribe(data => {
-			this.sites = data;
-		}, error => {
-			console.log(error);
-		});
+		this.sites = this.appService.getSites();
 	}
 }
