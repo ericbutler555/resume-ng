@@ -1,7 +1,7 @@
 @import 'src/scss/variables';
 
 .about-me {
-  background: $deepBlue url('/assets/code.jpg') no-repeat 20% top;
+  background: $deepBlue url('../../assets/code.jpg') no-repeat 20% top;
   background-attachment: local; // fallback for browsers that don't support fixed
   background-attachment: fixed;
   background-size: cover;
