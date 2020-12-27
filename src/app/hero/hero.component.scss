@@ -82,7 +82,6 @@
 
   li {
     line-height: 1.3;
-    transition: color 0.5s;
 
     @media ($iphone6) {
       float: left;
@@ -106,7 +105,7 @@ p.speech {
   padding: 5px 15px;
   margin-bottom: 20px;
   border-radius: 20px;
-  transition: all 0.4s;
+  transform-origin: center bottom;
 
   &:after {
     content: " ";
@@ -121,11 +120,6 @@ p.speech {
     border-right: 7px solid transparent;
     border-top: 10px solid $ashBlue; // fallback color
     border-top: 10px solid rgba(white, 0.3);
-  }
-
-  &.unspoken {
-    transform-origin: center bottom;
-    transform: scale(0) translateY(-50px) rotate(45deg);
   }
 }
 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { trigger, transition, query, style, animate, stagger } from '@angular/animations';
+import { trigger, transition, query, style, animate, stagger, state } from '@angular/animations';
 import { AppService } from '../app.service';
 
 @Component({
@@ -18,25 +18,29 @@ import { AppService } from '../app.service';
 					])
 				])
 			])
+		]),
+		trigger('wordBubbleAnimation', [
+			state('unspoken', style({
+				transform: 'scale(0) translateY(-50px) rotate(45deg)'
+			})),
+			state('spoken', style({
+				transform: 'scale(1) translateY(0) rotate(0deg)'
+			})),
+			transition('unspoken => spoken', animate(400))
 		])
 	]
 })
 export class HeroComponent implements OnInit {
-	showWordBubble: boolean = false;
-	tagline: string = 'Front-End Website Developer';
+	showWordBubble: string = 'unspoken';
 	animationState: string = 'static';
-	contacts = {
-		email:    'ericbutler555@gmail.com',
-		location: 'https://goo.gl/maps/5BjhKaPbmcu',
-		github:   'https://github.com/ericbutler555',
-		codepen:  'https://codepen.io/ericbutler555/pens/public/'
-	};
+	tagline: string = 'Front-End Website Developer';
 
 	constructor(private appService: AppService) { }
 
 	ngOnInit(): void {
-		setTimeout(() => this.showWordBubble = true, 1500);
+		setTimeout(() => this.showWordBubble = 'spoken', 1500);
 
+		// listen for contactAnimationState to change:
 		this.appService.contactAnimationState.subscribe(status => {
 			this.animationState = status;
 			setTimeout(() => this.animationState = 'static', 1500);

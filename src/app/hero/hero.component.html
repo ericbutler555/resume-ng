@@ -1,7 +1,7 @@
 <header class="about-me" id="contact-me">
 	<div class="about-content">
 
-		<p class="speech" [ngClass]="showWordBubble ? '' : 'unspoken'">Hello, I&rsquo;m</p>
+		<p [@wordBubbleAnimation]="showWordBubble" class="speech">Hello, I&rsquo;m</p>
 		<h1>Eric Butler</h1>
 		<h2>{{ tagline }}</h2>
 
@@ -16,25 +16,25 @@
 
 		<ul [@iconAnimation]="animationState" class="contact-info cf">
 			<li>
-				<a [href]="'mailto:' + contacts.email + '?subject=I%20saw%20your%20website'" target="_blank" rel="noopener">
+				<a href="mailto:ericbutler555@gmail.com?subject=I%20saw%20your%20website" target="_blank" rel="noopener">
 					<img src="assets/icons/envelope.svg" alt="Email" width="30">
-					{{ contacts.email }}
+					ericbutler555<br>@gmail.com
 				</a>
 			</li>
 			<li>
-				<a [href]="contacts.location" target="_blank" rel="noopener">
+				<a href="https://goo.gl/maps/5BjhKaPbmcu" target="_blank" rel="noopener">
 					<img src="assets/icons/compass.svg" alt="Location" width="30">
 					Louisville Ky<br> USA
 				</a>
 			</li>
 			<li>
-				<a [href]="contacts.github" target="_blank" rel="noopener">
+				<a href="https://github.com/ericbutler555" target="_blank" rel="noopener">
 					<img src="assets/icons/github.svg" alt="Github" width="26">
 					GitHub<br> Profile
 				</a>
 			</li>
 			<li>
-				<a [href]="contacts.codepen" target="_blank" rel="noopener">
+				<a href="https://codepen.io/ericbutler555/pens/public/" target="_blank" rel="noopener">
 					<img src="assets/icons/codepen.svg" alt="CodePen" width="26">
 					CodePen<br> Pens
 				</a>
