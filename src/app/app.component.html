@@ -1,7 +1,7 @@
-<app-hero></app-hero>
+<app-hero [animation]="animationState" (resetAnimationState)="handleAnimationReset($event)"></app-hero>
 <app-portfolio></app-portfolio>
 <app-current-job [job]="currentJob | async"></app-current-job>
 <app-experience></app-experience>
 <app-education></app-education>
 <app-skills></app-skills>
-<app-footer></app-footer>
+<app-footer (contactClicked)="handleContactClick($event)"></app-footer>
