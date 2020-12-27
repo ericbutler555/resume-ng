@@ -1,0 +1,108 @@
+@import 'src/scss/variables';
+
+.education {
+  position: relative; // contain skins
+  padding: 60px 0;
+  background: $ash;
+
+  h2 {
+    @include sectionHeadingStyles;
+  }
+}
+
+.education-skin1,
+.education-skin2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10%;
+  right: -10%;
+  z-index: -1; // keep behind content
+  background: $ash;
+}
+.education-skin1 {
+  transform: rotate(3deg);
+}
+.education-skin2 {
+  transform: rotate(-3deg);
+}
+
+.schools {
+  width: 100%;
+  max-width: 1088px; // 544 * 2
+  margin: 0 auto;
+}
+
+.school {
+  width: 100%;
+  max-width: 544px;
+  margin: 0 auto;
+  padding: 30px 15px;
+  text-align: center;
+
+  @media ($iphone6) {
+    text-align: left;
+  }
+
+  @media ($laptop) {
+    float: left;
+    padding: 40px 15px;
+
+    &:nth-of-type(2n+1) {
+      text-align: right;
+      padding-right: 60px;
+      border-right: 1px solid $darkBorderColor;
+    }
+
+    &:nth-of-type(2n) {
+      text-align: left;
+      padding-left: 60px;
+    }
+  }
+}
+
+.school-icon {
+  width: 60px;
+  height: 60px;
+
+  @media ($iphone6) {
+    float: left;
+    margin: 0 30px 20px 0;
+  }
+
+  @media ($laptop) {
+    float: none;
+    margin: 0;
+  }
+}
+
+.school-name {
+  font: 24px/1.2 $trocchi;
+  color: $deepBlue;
+  margin-bottom: 0.25em;
+}
+
+.school-program {
+  font: 18px/1.2 -apple-system, BlinkMacSystemFont, "Work Sans", sans-serif; // custom stack order to prefer Work Sans to Arial on non-Apples
+  margin-bottom: 0.25em;
+}
+
+.school-stats {
+  margin: 0 -10px; // negate side-padding on child p's
+
+  p {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: $altTextColor;
+
+    @media ($iphone6) {
+      padding: 0 15px 0 0;
+    }
+
+    @media ($laptop) {
+      padding: 0 10px;
+    }
+  }
+}

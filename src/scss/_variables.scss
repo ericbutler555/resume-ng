@@ -1,0 +1,48 @@
+// fonts:
+
+$sansStack: -apple-system, BlinkMacSystemFont, sans-serif;
+$serifStack: Georgia, serif;
+
+$trocchi: "Trocchi", $serifStack;
+$work: "Work Sans", $sansStack;
+
+// colors:
+
+$textColor: #1e2022;
+$altTextColor: #52616a;
+$lightTextColor: #aaa;
+
+$deepBlue: #0c3663;
+$ashBlue: #6e859f; // used as fallback solid color for speech bubble
+$ash: #b7c3cf; // bg of .education
+
+$oppBlue: alternate($deepBlue);
+$salmon: #ec7357;
+
+$borderColor: #ccc;
+$lightBorderColor: #eee;
+$darkBorderColor: #aaa;
+
+// media queries:
+
+$iphone6: "min-width: 667px";
+$tablet:  "min-width: 768px";
+$laptop:  "min-width: 1200px";
+
+// mixins:
+
+@mixin headnoteStyles() {
+  display: inline-block;
+  padding: 0 20px 10px 2px; // intentionally off-center
+  border-bottom: 1px solid $lightBorderColor;
+  font: 12px/1 $work;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@mixin sectionHeadingStyles() {
+  font: 20px/1 $work;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+}
