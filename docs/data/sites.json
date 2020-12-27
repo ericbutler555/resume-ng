@@ -1,0 +1,74 @@
+[
+	{
+		"title": "Rural 1st",
+		"link": "https://rural1st.com/",
+		"is_active": true,
+		"screenshot": "assets/screenshots/rural1st.jpg",
+		"year": "2020",
+		"tech_stack": ["Kentico CMS", "HTML", "Sass", "JS"]
+	},
+	{
+		"title": "Insights Conference Microsite",
+		"link": null,
+		"is_active": false,
+		"screenshot": "assets/screenshots/insights.jpg",
+		"year": "2019",
+		"tech_stack": ["Kentico CMS", "HTML", "Sass", "JS"]
+	},
+	{
+		"title": "Early Times Bottled-in-Bond",
+		"link": "https://www.earlytimesbottledinbond.com/",
+		"is_active": true,
+		"screenshot": "assets/screenshots/etbib.jpg",
+		"year": "2018",
+		"tech_stack": ["Docker", "WordPress", "PHP", "HTML", "Sass", "JS"]
+	},
+	{
+		"title": "Hershey Solutions",
+		"link": "https://www.hersheys.com/hersheysolutions/en_us/home.html",
+		"is_active": true,
+		"screenshot": "assets/screenshots/hersheysolutions.jpg",
+		"year": "2018",
+		"tech_stack": ["Adobe Experience Manager", "CSS", "JS"]
+	},
+	{
+		"title": "Alliance for Substance Abuse Progress",
+		"link": "https://www.asapbc.org/",
+		"is_active": true,
+		"screenshot": "assets/screenshots/asap.jpg",
+		"year": "2017",
+		"tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+	},
+	{
+		"title": "Korbel California Champagne",
+		"link": "https://www.korbel.com/",
+		"is_active": true,
+		"screenshot": "assets/screenshots/korbel.jpg",
+		"year": "2017",
+		"tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+	},
+	{
+		"title": "Canadian Mist",
+		"link": null,
+		"is_active": false,
+		"screenshot": "assets/screenshots/canadianmist.jpg",
+		"year": "2016",
+		"tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+	},
+	{
+		"title": "Norton Children’s",
+		"link": null,
+		"is_active": false,
+		"screenshot": "assets/screenshots/nortonchildrens.jpg",
+		"year": "2016",
+		"tech_stack": ["Design", "WordPress", "PHP", "HTML", "CSS", "JS"]
+	},
+	{
+		"title": "Collingwood",
+		"link": "https://www.collingwoodwhisky.com/",
+		"is_active": true,
+		"screenshot": "assets/screenshots/collingwood.jpg",
+		"year": "2016",
+		"tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
+	}
+]
