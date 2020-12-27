@@ -1,27 +1,33 @@
-# Resume
+# My Resume
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.1.
+Simple-ish single-page app (SPA) to serve as my online resume.
 
-## Development server
+## Tech Stack
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Angular 10](https://angular.io/) and the [@angular/cli](https://cli.angular.io/)
+- [Sass](https://sass-lang.com/) for styling
+- Local `JSON` files for simple, separated data
 
-## Code scaffolding
+## Included Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `Components` to make sections modular and scope styling
+- Centralized `Service` to manage HTTP requests
+- `RxJS` and the `map()` operator to manipulate data returned from HTTP requests
+- Observable `Subject` to listen and react to ongoing data changes
+- `async` pipes to load data into the DOM asynchronously
+- `*ngFor` loops to iterate over content arrays
+- `*ngIf` checks to manage content display and prevent JS errors
+- `[ngClass]` with ternary operators to dynamically add class names
+- `@angular/animations` to define and execute DOM animations
+- `@Input()` parameters to pass values into components
+- `(click)` handlers that listen for user events
+- Consistent use of `TypeScript` throughout for static type checking
+- Local `JSON` files to fetch data objects from
+- `POCOs` (plain old class objects) to define data models and params
+- Property binding and dynamic HTML attributes using `[attr]="val"` notation
+- Dynamic content using `{{val}}` text interpolation
+- Native browser lazy-loading of images using new `loading="lazy"` attribute
+- Sass `_variables.scss` partial for global CSS definitions
+- Sass `mixins` for style injection
+- Mobile-first CSS media queries for responsive design
+- Webfonts from Google Fonts
