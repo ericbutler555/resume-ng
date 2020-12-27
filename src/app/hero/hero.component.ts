@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { trigger, transition, query, style, animate, stagger } from '@angular/animations';
+import { AppService } from '../app.service';
 
 @Component({
 	selector: 'app-hero',
@@ -21,11 +22,9 @@ import { trigger, transition, query, style, animate, stagger } from '@angular/an
 	]
 })
 export class HeroComponent implements OnInit {
-	@Input() animation: string;
-	@Output() resetAnimationState = new EventEmitter<string>();
 	showWordBubble: boolean = false;
 	tagline: string = 'Front-End Website Developer';
-
+	animationState: string = 'static';
 	contacts = {
 		email:    'ericbutler555@gmail.com',
 		location: 'https://goo.gl/maps/5BjhKaPbmcu',
@@ -33,13 +32,14 @@ export class HeroComponent implements OnInit {
 		codepen:  'https://codepen.io/ericbutler555/pens/public/'
 	};
 
+	constructor(private appService: AppService) { }
+
 	ngOnInit(): void {
 		setTimeout(() => this.showWordBubble = true, 1500);
-	}
 
-	ngOnChanges(): void {
-		if (this.animation === 'pulsing') {
-			setTimeout(() => this.resetAnimationState.emit('static'), 1500);
-		}
+		this.appService.contactAnimationState.subscribe(status => {
+			this.animationState = status;
+			setTimeout(() => this.animationState = 'static', 1500);
+		});
 	}
 }

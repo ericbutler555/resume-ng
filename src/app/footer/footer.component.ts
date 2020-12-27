@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
 	selector: 'app-footer',
@@ -6,9 +7,10 @@ import { Component, Output, EventEmitter } from '@angular/core';
 	styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-	@Output() contactClicked = new EventEmitter<string>();
+
+	constructor(private appService: AppService) { }
 
 	onContactClick() {
-		this.contactClicked.emit('pulsing');
+		this.appService.contactAnimationState.next('pulsing');
 	}
 }

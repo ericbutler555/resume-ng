@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Site } from './portfolio/site';
 import { Job } from './experience/job';
@@ -9,6 +10,7 @@ import { School } from './education/school';
   providedIn: 'root'
 })
 export class AppService {
+  contactAnimationState = new Subject<string>();
 
   constructor(private http: HttpClient) { }
 
