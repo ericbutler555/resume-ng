@@ -15,7 +15,7 @@
 			</div>
 		</div>
 		<div class="job-specs cf">
-			<img class="job-icon" [src]="job.company_logo" [alt]="job.company_name">
+			<img class="job-icon" [src]="job.company_logo" [alt]="job.company_name" loading="lazy">
 			<p class="job-dates">{{ job.start_date}} &ndash; {{ job.end_date }}</p>
 			<p class="job-location">{{ job.location }}</p>
 			<p class="job-industry">{{ job.industry?.join(', ') }}</p>

@@ -7,7 +7,7 @@
 	<div class="schools cf">
 		<div *ngFor="let school of schools | async" class="school cf">
 
-			<img [src]="school.icon" [alt]="school.name" class="school-icon">
+			<img [src]="school.icon" [alt]="school.name" class="school-icon" loading="lazy">
 
 			<h3 class="school-name">{{ school.name }}</h3>
 			<h4 *ngIf="school.program" class="school-program">{{ school.program }}</h4>

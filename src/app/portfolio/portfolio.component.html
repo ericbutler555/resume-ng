@@ -2,16 +2,16 @@
 
 	<p class="headnote">Work Samples</p>
 
-	<div class="sites cf">
+	<div *ngIf="sites" class="sites cf">
 
 		<div *ngFor="let site of sites | async"
 			class="site"
 			[ngClass]="!site.is_active ? 'inactive' : ''">
 
 			<a *ngIf="site.link" [href]="site.link" target="_blank" rel="noopener">
-				<img [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'">
+				<img [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'" loading="lazy">
 			</a>
-			<img *ngIf="!site.link" [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'">
+			<img *ngIf="!site.link" [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'" loading="lazy">
 
 			<h4>{{ site.title }}</h4>
 

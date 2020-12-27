@@ -2,18 +2,18 @@
 
 	<p class="headnote">Currently</p>
 
-	<img class="current-job-icon" [src]="job.company_logo" [alt]="job.company_name" width="150">
+	<img class="icon" [src]="job.company_logo" [alt]="job.company_name" width="150" loading="lazy">
 
-	<h3 class="job-title">{{ job.position }}</h3>
-	<h4 class="job-employer">{{ job.company_name }}</h4>
+	<h3 class="title">{{ job.position }}</h3>
+	<h4 class="employer">{{ job.company_name }}</h4>
 
-	<div class="job-specs">
-		<p class="job-dates">{{ job.start_date }} &ndash; {{ job.is_current ? 'present' : job.end_date }}</p>
-		<p class="job-location">{{ job.location }}</p>
-		<p class="job-industry">{{ job.industry?.join(', ') }}</p>
+	<div class="specs">
+		<p class="dates">{{ job.start_date }} &ndash; {{ job.is_current ? 'present' : job.end_date }}</p>
+		<p class="location">{{ job.location }}</p>
+		<p class="industry">{{ job.industry?.join(', ') }}</p>
 	</div>
 
-	<div class="job-summary">
+	<div class="summary">
 		<ul>
 			<li *ngFor="let item of job.description">{{ item }}</li>
 		</ul>

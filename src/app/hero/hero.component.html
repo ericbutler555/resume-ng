@@ -1,7 +1,7 @@
-<header class="about-me js-lazyload-bg" id="contact-me" style="background-image: url('assets/code.jpg')">
+<header class="about-me" id="contact-me">
 	<div class="about-content">
 
-		<p class="speech unspoken">Hello, I&rsquo;m</p>
+		<p class="speech" [ngClass]="showWordBubble ? '' : 'unspoken'">Hello, I&rsquo;m</p>
 		<h1>Eric Butler</h1>
 		<h2>{{ tagline }}</h2>
 

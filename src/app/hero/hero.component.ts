@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
 	selector: 'app-hero',
 	templateUrl: './hero.component.html',
 	styleUrls: ['./hero.component.scss']
 })
-export class HeroComponent {
-
+export class HeroComponent implements OnInit {
+	showWordBubble: boolean = false;
 	tagline: string = 'Front-End Website Developer';
 
 	contacts = {
@@ -15,4 +15,10 @@ export class HeroComponent {
 		github:   'https://github.com/ericbutler555',
 		codepen:  'https://codepen.io/ericbutler555/pens/public/'
 	};
+
+	ngOnInit(): void {
+		setTimeout(() => {
+			this.showWordBubble = true;
+		}, 1500);
+	}
 }
