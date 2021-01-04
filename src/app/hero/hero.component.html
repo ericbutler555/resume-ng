@@ -7,11 +7,11 @@
 
 		<p class="intro">
 			Check out my
-			<a href="#work">work samples</a>,
-			<a href="#current-job">job history</a>,
+			<a [ngxScrollTo]="'#work'">work samples</a>,
+			<a [ngxScrollTo]="'#current-job'">job history</a>,
 			<br>
-			<a href="#education">education</a> and
-			<a href="#skills">technical skills</a> below.
+			<a [ngxScrollTo]="'#education'">education</a> and
+			<a [ngxScrollTo]="'#skills'">technical skills</a> below.
 		</p>
 
 		<ul [@iconAnimation]="animationState" class="contact-info cf">
@@ -42,7 +42,7 @@
 		</ul>
 
 		<p class="scroll-down">
-			<a href="#work" title="See some work">
+			<a [ngxScrollTo]="'#work'" title="See some work">
 				<img src="assets/icons/chevron-down.svg" alt="Scroll down" width="30">
 			</a>
 		</p>

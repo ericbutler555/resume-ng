@@ -34,6 +34,7 @@
     a {
       position: relative;
       display: inline-block;
+      cursor: pointer;
 
       &:after {
         content: "";
@@ -128,6 +129,7 @@ p.scroll-down {
   margin-top: 1em;
 
   a img {
+    cursor: pointer;
     transition: transform 0.2s;
   }
 
