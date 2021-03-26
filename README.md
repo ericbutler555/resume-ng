@@ -31,3 +31,11 @@ Simple-ish single-page app (SPA) to serve as my online resume.
 - Sass `mixins` for style injection
 - Mobile-first CSS media queries for responsive design
 - Webfonts from Google Fonts
+
+## Note to Self 😛
+
+To deploy changes to the live GitHub Pages site, run my custom `npm run publish` command to generate a prod build and save it in the `docs` directory.
+
+**Also don't forget** to duplicate the `docs/index.html` page and save it as `docs/404.html`, per Angular's [deployment instructions](https://angular.io/guide/deployment#deploy-to-github-pages).
+
+Then just `git push` to this GitHub repo.
