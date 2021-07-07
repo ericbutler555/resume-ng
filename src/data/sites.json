@@ -5,7 +5,7 @@
     "is_active": true,
     "screenshot": "assets/screenshots/intothedust.jpg",
     "year": "2021",
-    "tech_stack": ["Next.JS", "React", "Netlify", "CSS Modules"]
+    "tech_stack": ["Next.js", "React", "Netlify", "CSS Modules"]
   },
   {
     "title": "Rural 1st",
@@ -13,7 +13,7 @@
     "is_active": true,
     "screenshot": "assets/screenshots/rural1st.jpg",
     "year": "2020",
-    "tech_stack": ["Kentico CMS", "HTML", "Sass", "JS"]
+    "tech_stack": ["Kentico CMS", "HTML", "Sass", "Bootstrap", "JS"]
   },
   {
     "title": "Early Times Bottled-in-Bond",
