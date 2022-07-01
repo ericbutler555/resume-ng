@@ -1,7 +1,15 @@
 [
   {
+    "title": "Better Together",
+    "link": "https://e-farmcredit.com/merger/",
+    "is_active": true,
+    "screenshot": "assets/screenshots/merger.jpg",
+    "year": "2022",
+    "tech_stack": ["One-Pager", "Flexbox", "CSS Custom Properties"]
+  },
+  {
     "title": "Into the Dust",
-    "link": "https://intothedustbook.com/",
+    "link": "https://www.intothedustbook.com/",
     "is_active": true,
     "screenshot": "assets/screenshots/intothedust.jpg",
     "year": "2021",
@@ -41,8 +49,8 @@
   },
   {
     "title": "Korbel California Champagne",
-    "link": "https://www.korbel.com/",
-    "is_active": true,
+    "link": null,
+    "is_active": false,
     "screenshot": "assets/screenshots/korbel.jpg",
     "year": "2017",
     "tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
@@ -56,19 +64,11 @@
     "tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
   },
   {
-    "title": "Norton Children’s",
+    "title": "Norton Children’s Hospital",
     "link": null,
     "is_active": false,
     "screenshot": "assets/screenshots/nortonchildrens.jpg",
     "year": "2016",
     "tech_stack": ["Design", "WordPress", "PHP", "HTML", "CSS", "JS"]
-  },
-  {
-    "title": "Collingwood",
-    "link": "https://www.collingwoodwhisky.com/",
-    "is_active": true,
-    "screenshot": "assets/screenshots/collingwood.jpg",
-    "year": "2016",
-    "tech_stack": ["WordPress", "PHP", "HTML", "CSS", "JS"]
   }
 ]
