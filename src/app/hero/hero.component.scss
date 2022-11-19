@@ -1,5 +1,22 @@
 @import 'src/scss/variables';
 
+.top-ribbon {
+  text-align: center;
+  padding: 4px;
+  background: #ebd596;
+  color: #071e36;
+
+  p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
 .about-me {
   background: $deepBlue url('../../assets/code.jpg') no-repeat 20% top;
   background-attachment: local; // fallback for browsers that don't support fixed
