@@ -39,3 +39,7 @@ To deploy changes to the live GitHub Pages site, run my custom `npm run publish`
 **Also don't forget** to duplicate the `docs/index.html` page and save it as `docs/404.html`, per Angular's [deployment instructions](https://angular.io/guide/deployment#deploy-to-github-pages).
 
 Then just `git push` to this GitHub repo.
+
+## By the way
+
+I also made a [React version](https://github.com/ericbutler555/resume-react) of this same resume if you're into that.
