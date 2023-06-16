@@ -1,17 +1,17 @@
 [
   {
-    "title": "Better Together",
-    "link": "https://e-farmcredit.com/merger/",
+    "title": "Farm Credit Mid-America",
+    "link": "https://www.fcma.com/",
     "is_active": true,
-    "screenshot": "assets/screenshots/merger.jpg",
-    "year": "2022",
-    "tech_stack": ["One-Pager", "Flexbox", "CSS Custom Properties"]
+    "screenshot": "assets/screenshots/fcma.jpg",
+    "year": "2023",
+    "tech_stack": ["Progress Sitefinity CMS", ".NET MVC", "Razor", "Azure Cloud", "Bootstrap"]
   },
   {
     "title": "Into the Dust",
-    "link": "https://www.intothedustbook.com/",
+    "link": "https://intothedustbook.netlify.app/",
     "is_active": true,
-    "screenshot": "assets/screenshots/intothedust.jpg",
+    "screenshot": "assets/screenshots/intothedust2.jpg",
     "year": "2021",
     "tech_stack": ["Next.js", "React", "Netlify", "CSS Modules"]
   },
