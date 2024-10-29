@@ -4,11 +4,13 @@
     "company_name": "Farm Credit Mid-America",
     "position": "Front-End Web Developer",
     "description": [
-      "Lead developer and maintainer of the company's customer-facing websites, which received over 786,000 unique visitors in 2022.",
-      "Work closely with Marketing Dept and brand teams to create content, landing pages and lead-generation forms to attract new customers and satisfy business interests.",
-      "Coordinate with 3rd-party agencies and vendors on campaign partnerships and software integrations.",
-      "Re-platformed and re-built our flagship company website from scratch in 2023, acting as main tech resource for discovery process, vendor exploration, setup, implementation, coding and re-launch.",
-      "Consulted with product owners on big-picture concepts like sitemap, content architecture and site design with internal processes and brand constraints in mind."
+      "I write the front-end HTML, CSS and JS, and manage the back-end C# and CMS platform for the company's two flagship websites, FCMA.com and Rural1st.com, which received over 1.3 million unique users in the last year.",
+      "I led the cloud migration and ground-up rebuild of both websites in 2023, including discovery and vendor evaluation.",
+      "Worked with Legal to integrate OneTrust cookie consent and personal data request tools for site compliance with California's CCPA and CPRA privacy laws.",
+      "Use Git, Azure DevOps and CI/CD to test and deploy code changes and CMS version upgrades across environments.",
+      "Manage Google services like Search Console, Tag Manager, Analytics and API keys for internal teams.",
+      "Work closely with Marketing Dept to maintain site content, plan and execute new features, create landing pages and generate leads.",
+      "Go-to person for image optimization, icons and brand assets, QR codes, HTML and SEO questions, and other digital needs."
     ],
     "location": "Louisville, KY",
     "industry": ["Financial Services", "Web Development"],
