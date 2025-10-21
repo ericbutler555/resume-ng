@@ -1,38 +1,42 @@
 [
-	{
-		"name": "New York University",
-		"program": "Summer Publishing Institute",
-		"certificate": "Certificate",
-		"location": "New York, NY",
-		"start_date": "June 2007",
-		"end_date": "August 2007",
-		"icon": "assets/logos/NewYorkUniversity-Logo.png"
-	},
-	{
-		"name": "University of Louisville",
-		"program": "English",
-		"certificate": "Bachelor of Arts",
-		"location": "Louisville, KY",
-		"start_date": "August 2003",
-		"end_date": "December 2006",
-		"icon": "assets/logos/UniversityOfLouisville-Logo.png"
-	},
-	{
-		"name": "University of Miami",
-		"program": "Entrepreneurship",
-		"certificate": "Transferred",
-		"location": "Coral Gables, FL",
-		"start_date": "August 2001",
-		"end_date": "May 2003",
-		"icon": "assets/logos/UniversityOfMiami-Logo.png"
-	},
-	{
-		"name": "Trinity High School",
-		"program": null,
-		"certificate": "HS Diploma",
-		"location": "Louisville, KY",
-		"start_date": "August 1997",
-		"end_date": "June 2001",
-		"icon": "assets/logos/TrinityHS-Logo.png"
-	}
+  {
+    "id": 1,
+    "name": "New York University",
+    "program": "Summer Publishing Institute",
+    "certificate": "Graduate Certificate",
+    "location": "New York, NY",
+    "start_date": "June 2007",
+    "end_date": "August 2007",
+    "icon": "assets/logos/NewYorkUniversity-Logo.png"
+  },
+  {
+    "id": 2,
+    "name": "University of Louisville",
+    "program": "English",
+    "certificate": "Bachelor of Arts",
+    "location": "Louisville, KY",
+    "start_date": "August 2003",
+    "end_date": "December 2006",
+    "icon": "assets/logos/UniversityOfLouisville-Logo.png"
+  },
+  {
+    "id": 3,
+    "name": "University of Miami",
+    "program": null,
+    "certificate": null,
+    "location": "Coral Gables, FL",
+    "start_date": "August 2001",
+    "end_date": "May 2003",
+    "icon": "assets/logos/UniversityOfMiami-Logo.png"
+  },
+  {
+    "id": 4,
+    "name": "Trinity High School",
+    "program": null,
+    "certificate": "HS Diploma",
+    "location": "Louisville, KY",
+    "start_date": "August 1997",
+    "end_date": "June 2001",
+    "icon": "assets/logos/TrinityHS-Logo.png"
+  }
 ]

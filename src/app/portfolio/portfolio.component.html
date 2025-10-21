@@ -8,7 +8,7 @@
 			class="site"
 			[ngClass]="!site.is_active ? 'inactive' : ''">
 
-			<a *ngIf="site.link" [href]="site.link" target="_blank" rel="noopener">
+			<a *ngIf="site.link" [href]="site.link" target="_blank" rel="noreferrer">
 				<img [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'" loading="lazy">
 			</a>
 			<img *ngIf="!site.link" [src]="site.screenshot" [alt]="'Screenshot of the ' + site.title + ' website'" loading="lazy">

@@ -13,7 +13,7 @@
 			<h4 *ngIf="school.program" class="school-program">{{ school.program }}</h4>
 
 			<div class="school-stats">
-				<p class="school-credit">{{ school.certificate }}</p>
+				<p *ngIf="school.certificate" class="school-credit">{{ school.certificate }}</p>
 				<p class="school-location">{{ school.location }}</p>
 				<p class="school-dates">{{ school.start_date }} &ndash; {{ school.end_date }}</p>
 			</div>

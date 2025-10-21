@@ -1,16 +1,17 @@
 [
   {
+    "id": 0,
     "is_current": true,
     "company_name": "Farm Credit Mid-America",
     "position": "Front-End Web Developer",
     "description": [
-      "I write the front-end HTML, CSS and JS, and manage the back-end C# and CMS platform for the company's two flagship websites, FCMA.com and Rural1st.com, which received over 1.3 million unique users in the last year.",
-      "I led the cloud migration and ground-up rebuild of both websites in 2023, including discovery and vendor evaluation.",
-      "Worked with Legal to integrate OneTrust cookie consent and personal data request tools for site compliance with California's CCPA and CPRA privacy laws.",
+      "I write the front-end HTML, CSS and JS, and manage the back-end C# and CMS platform for the company’s two flagship websites, FCMA.com and Rural1st.com, which received over 2 million unique users in the last year.",
+      "I led the cloud migration and ground-up rebuild of both websites in 2023, including the discovery process and vendor evaluation.",
+      "Worked with Legal to integrate OneTrust cookie consent and personal data request tools for site compliance with California’s CCPA and CPRA privacy laws.",
       "Use Git, Azure DevOps and CI/CD to test and deploy code changes and CMS version upgrades across environments.",
       "Manage Google services like Search Console, Tag Manager, Analytics and API keys for internal teams.",
       "Work closely with Marketing Dept to maintain site content, plan and execute new features, create landing pages and generate leads.",
-      "Go-to person for image optimization, icons and brand assets, QR codes, HTML and SEO questions, and other digital needs."
+      "Handle image optimization, icons and brand assets, QR codes, HTML and SEO questions, and other digital needs."
     ],
     "location": "Louisville, KY",
     "industry": ["Financial Services", "Web Development"],
@@ -19,6 +20,7 @@
     "company_logo": "assets/logos/FarmCredit-Logo.svg"
   },
   {
+    "id": 1,
     "is_current": false,
     "company_name": "PriceWeber",
     "position": "Senior Front-End Web Developer",
@@ -39,14 +41,15 @@
     "company_logo": "assets/logos/PriceWeber-Logo.png"
   },
   {
+    "id": 2,
     "is_current": false,
     "company_name": "State of Hawaii Department of Labor & Industrial Relations",
     "position": "Program Specialist",
     "description": [
       "Designed, built, and maintained several database-driven web apps, websites and intranet tools for the Workforce Development Council, the Unemployment Insurance Division, and the Department of Labor, using Adobe ColdFusion, PHP, MySQL, and jQuery.",
-      "Served as webmaster for the Department of Labor's WordPress-powered website: posting content, maintaining pages, and assisting divisions with their sub-sites.",
-      "Built a student/employer web portal for University of Hawaii Community College's C3T Program.",
-      "Also did graphic design and layout for the Department's annual reports, newsletters, and other print/PDF materials, using Adobe InDesign, Photoshop, and Illustrator."
+      "Served as webmaster for the Department of Labor’s WordPress-powered website: posting content, maintaining pages, and assisting divisions with their sub-sites.",
+      "Built a student/employer web portal for University of Hawaii Community College’s C3T Program.",
+      "Also did graphic design and layout for the Department’s annual reports, newsletters, and other print/PDF materials, using Adobe InDesign, Photoshop, and Illustrator."
     ],
     "location": "Honolulu, HI",
     "industry": ["Government", "Web Development"],
@@ -55,12 +58,13 @@
     "company_logo": "assets/logos/StateOfHawaii-Logo.png"
   },
   {
+    "id": 3,
     "is_current": false,
-    "company_name": "Harpercollins Publishers",
+    "company_name": "HarperCollins Publishers",
     "position": "Book Designer",
     "description": [
       "Designed book interiors for over 75 national fiction, history, business, memoir and special interest titles.",
-      "Prioritized overlapping projects at different stages of production under hard­-set deadlines."
+      "Prioritized overlapping projects at different stages of production under hard-set deadlines."
     ],
     "location": "New York, NY",
     "industry": ["Book Publishing", "Graphic Design"],
@@ -69,11 +73,12 @@
     "company_logo": "assets/logos/HarperCollins-Logo.png"
   },
   {
+    "id": 4,
     "is_current": false,
     "company_name": "Butler Books",
     "position": "Graphic Designer",
     "description": [
-      "Designed dozens of books, covers, and the company's annual sales catalogs.",
+      "Designed dozens of books, covers, and the company’s annual sales catalogs.",
       "Managed the company’s e-commerce website."
     ],
     "location": "Louisville, KY",
